@@ -22,5 +22,11 @@
         outfile.Write("|")
         outfile.Write(field2.Text)
         outfile.Write("|")
+        outfile.Write(field3.Text)
+        outfile.Write("|")
+        outfile.Write(field4.Text)
+        outfile.Write("|")
+        outfile.Write(field5.Text)
+        outfile.Write("|")
     End Sub
 End Class
