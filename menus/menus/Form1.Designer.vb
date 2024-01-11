@@ -23,15 +23,70 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FileToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SavedToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClosedToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(155, 111)
+        Me.TextBox1.Location = New System.Drawing.Point(-2, 31)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(507, 72)
+        Me.TextBox1.Size = New System.Drawing.Size(802, 422)
         Me.TextBox1.TabIndex = 0
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem1, Me.SavedToolStripMenuItem1, Me.ClosedToolStripMenuItem1, Me.ExitToolStripMenuItem1, Me.OpenToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'FileToolStripMenuItem1
+        '
+        Me.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1"
+        Me.FileToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.FileToolStripMenuItem1.Text = "new"
+        '
+        'SavedToolStripMenuItem1
+        '
+        Me.SavedToolStripMenuItem1.Name = "SavedToolStripMenuItem1"
+        Me.SavedToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.SavedToolStripMenuItem1.Text = "save"
+        '
+        'ClosedToolStripMenuItem1
+        '
+        Me.ClosedToolStripMenuItem1.Name = "ClosedToolStripMenuItem1"
+        Me.ClosedToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ClosedToolStripMenuItem1.Text = "closed"
+        '
+        'ExitToolStripMenuItem1
+        '
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem1.Text = "exit"
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.OpenToolStripMenuItem.Text = "open"
         '
         'Form1
         '
@@ -39,12 +94,22 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FileToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents SavedToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ClosedToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
 End Class
