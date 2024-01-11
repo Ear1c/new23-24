@@ -28,5 +28,8 @@
         outfile.Write("|")
         outfile.Write(field5.Text)
         outfile.Write("|")
+        outfile.Write(PictureBox1.ImageLocation)
+        outfile.WriteLine()
+        outfile.Close()
     End Sub
 End Class
