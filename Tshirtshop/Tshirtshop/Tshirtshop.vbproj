@@ -161,5 +161,8 @@
   <ItemGroup>
     <None Include="Resources\OIP %2832%29.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
